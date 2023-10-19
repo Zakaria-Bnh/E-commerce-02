@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-primary
+    }
+}
+@layer components {
+    .flex-c {
+        @apply flex items-center
+    }
+    .flex-c-c {
+        @apply flex items-center justify-center
+    }
+    .flex-c-between {
+        @apply flex items-center justify-between flex-row
+    }
+    .flex-c-around {
+        @apply flex items-center justify-around flex-row
+    }
+    .flex-column {
+        @apply flex flex-col
+    }
+    .flex-column-between {
+        @apply flex flex-col justify-between
+    }
+}
+@layer utilities {
+    .container {
+        @apply w-[90%] md:w-[85%] lg:max-w-[1440px] mx-auto
+    }
+}
